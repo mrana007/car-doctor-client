@@ -50,7 +50,7 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <input className="btn btn-secondary bg-[#FF3811] text-white normal-case" type="submit" value="Sign In" />
+          <input className="btn btn-error bg-[#FF3811] text-white normal-case" type="submit" value="Sign In" />
         </div>
       </form>
       <p className='text-center pb-6'>New to Car Doctors? <Link className='text-[#FF3811] font-bold' to='/signup'>Sign Up</Link></p>

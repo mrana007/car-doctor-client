@@ -55,7 +55,7 @@ const SignUp = () => {
           <input type="password" name='password' placeholder="Enter password" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-          <input className="btn btn-secondary bg-[#FF3811] text-white normal-case" type="submit" value="Sign Up" />
+          <input className="btn btn-error bg-[#FF3811] text-white normal-case" type="submit" value="Sign Up" />
         </div>
       </form>
       <p className='text-center pb-6'>Already Have an Account? <Link className='text-[#FF3811] font-bold' to='/login'>Sign In</Link></p>
