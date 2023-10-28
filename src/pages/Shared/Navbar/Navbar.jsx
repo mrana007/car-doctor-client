@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
+        <li><Link to='/bookings'>My Bookings</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
     </>
 
@@ -44,7 +44,10 @@ const Navbar = () => {
   <div className="navbar-end">
     <button className="btn btn-outline btn-warning normal-case mr-4"><span className="text-red-500">Appointment</span></button>
     {
-      user?.email ? <button onClick={handleLogOut} className="btn btn-outline btn-error w-28 font-extrabold text-[#FF3811] normal-case">Log Out</button> : <Link to='/login' className="btn btn-outline btn-error w-28 font-extrabold text-[#FF3811] normal-case">Login</Link>
+      user?.email ?
+      <Link to='/bookings' onClick={handleLogOut} className="btn btn-outline btn-error w-28 font-extrabold text-[#FF3811] normal-case">Log Out</Link>
+       : 
+       <Link to='/login' className="btn btn-outline btn-error w-28 font-extrabold text-[#FF3811] normal-case">Login</Link>
     }
   </div>
 </div>
